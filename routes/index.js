@@ -153,4 +153,52 @@ router.post("/verify",async (req, res) => {
     
   }
 })
+
+
+router.get('/orderlist', function(req, res, next) {
+  res.send({
+    data:[
+      {
+        id:1,
+        userName:"张三",
+        telphone:"13812345678",
+        orderTime:"2021-10-10 12:00:00",
+        orderStatus:1,
+        orderStatusText:"已支付",
+        orderAmount:1357,
+        orderNumber:"N9876282"
+      },
+      {
+        id:2,
+        userName:"李四",
+        telphone:"13678943094",
+        orderTime:"2021-10-11 13:30:00",
+        orderStatus:1,
+        orderStatusText:"已支付",
+        orderAmount:3357.653,
+        orderNumber:"T889123474"
+      },
+      {
+        id:3,
+        userName:"秀文",
+        telphone:"13734534321",
+        orderTime:"2022-07-03 11:24:00",
+        orderStatus:0,
+        orderStatusText:"未支付",
+        orderAmount:980,
+        orderNumber:"P98748123"
+      },
+      {
+        id:4,
+        userName:"少卿",
+        telphone:"13867531345",
+        orderTime:"2024-02-19 08:30:00",
+        orderStatus:1,
+        orderStatusText:"已支付",
+        orderAmount:1372,
+        orderNumber:"E8741293"
+      }
+    ]
+  })
+});
 module.exports = router;

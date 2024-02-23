@@ -24,7 +24,7 @@ router.get('/routers', function(req, res, next) {
         children: [
           {
             path: "/orderlist",
-            name: "列表",
+            name: "Hook列表",
             component: "OrderList",
           },
           {
@@ -33,9 +33,9 @@ router.get('/routers', function(req, res, next) {
             component: "UploadBigFile/index",
           },
           {
-            path: "/ceshi",
-            name: "测试",
-            component: "Ceshi",
+            path: "/permission",
+            name: "按钮权限",
+            component: "Permission/index",
             meta:{
               keepAlive:true
             }

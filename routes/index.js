@@ -33,9 +33,9 @@ router.get('/routers', function(req, res, next) {
             component: "UploadBigFile/index",
           },
           {
-            path: "/ceshi",
-            name: "测试",
-            component: "Ceshi",
+            path: "/virtuallist",
+            name: "虚拟列表",
+            component: "VirtualList/index",
             meta:{
               keepAlive:true
             }

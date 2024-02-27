@@ -41,7 +41,12 @@ router.get('/routers', function(req, res, next) {
             path: "/virtuallist",
             name: "虚拟列表",
             component: "VirtualList/index",
-          }
+          },
+          {
+            path: "/skeleton",
+            name: "骨架屏",
+            component: "Skeleton/index",
+          },
         ],
       },
     ]
@@ -202,5 +207,13 @@ router.get('/orderlist', function(req, res, next) {
       }
     ]
   })
+});
+
+router.get('/skeleton', function(req, res, next) {
+  setTimeout(() => {
+    res.send({
+      data:'加载完成'
+    })
+  }, 2000);
 });
 module.exports = router;

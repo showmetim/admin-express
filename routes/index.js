@@ -25,7 +25,7 @@ router.get('/routers', function(req, res, next) {
           {
             path: "/orderlist",
             name: "Hook列表",
-            component: "OrderList",
+            component: "OrderList/index",
           },
           {
             path: "/uploadbigfile",
@@ -43,9 +43,9 @@ router.get('/routers', function(req, res, next) {
             component: "VirtualList/index",
           },
           {
-            path: "/skeleton",
-            name: "骨架屏",
-            component: "Skeleton/index",
+            path: "/xydialog",
+            name: "可拖动弹窗",
+            component: "XYDialog/index",
           },
         ],
       },
